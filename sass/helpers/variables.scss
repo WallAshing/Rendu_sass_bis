@@ -1,0 +1,40 @@
+// General
+    // width
+    $max-width: 100%;
+    $width: 100vw;
+    $demi-width: calc(100vw / 2);
+    // text-transform
+    $caps-lock: uppercase;
+    // weight
+    $semi-thin: 200;
+    $light: 300;
+    $semi-light: 400;
+    $medium: 500;
+    $semi-bold: 600;
+    //margin or padding
+    $reset: 0px 0px;
+
+
+//Container-1 mouse
+$mouse-size: 60px;
+
+
+// Colors
+$white: white;
+$black: black;
+$grey: #42495B;
+$light-grey: #7A839E;
+$ligther-grey: #F6F7FB;
+$light-purple: #6156F9;
+$purple: #7f76f9;
+$dark-purple: #1A129F;
+$dark-blue: #1000FF;
+$gradiant: linear-gradient(0.25turn, #1A129F, #6156F9);
+
+
+// Fonts
+$poppins: 'Poppins', sans-serif;
+$dosis: 'Dosis', sans-serif;
+$lobster: 'Lobster', cursive;
+$lato: 'Lato', sans-serif;
+

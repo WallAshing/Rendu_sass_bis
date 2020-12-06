@@ -1,0 +1,145 @@
+.container-1{
+    display: flex;
+    max-width: $width;
+    margin: auto;
+    justify-content: space-between;
+    min-height: 630px;
+    position: relative;
+
+    section{
+        max-width: $demi-width;
+
+        article{
+            .social-container{
+                position: absolute;
+                width: 50px;
+                height: 275px;
+                display: flex;
+                flex-direction: column;
+                top: 200px;
+                left: 2%;
+
+                img{
+                    position: relative;
+                    width: 13px;
+                    margin: 30px 10px;
+                    
+                }
+            }
+
+            h1{
+                font-family: $poppins;
+                font-size: 50px;
+                font-weight: $semi-light;
+                color: $grey;
+                text-transform: $caps-lock;
+                margin-left: 130px;
+                margin-top: 100px;
+                
+                span{
+                    line-height: 10px;
+                    font-size: 74px;
+                    font-weight: $semi-bold;
+                }
+            }
+
+            p{
+                font-size: 17px;
+                font-family: $poppins;
+                font-weight: $light;
+                color: $grey;
+                margin-left: 130px;
+                margin-top: 10px;
+                margin-bottom: 25px;
+                text-transform: $caps-lock;
+            }
+
+            button{
+                border: none;
+                text-decoration: none;
+                background: $gradiant;
+                color: $white;
+                font-family: $poppins;
+                font-size: 17px;
+                font-weight: $medium;
+                text-transform: $caps-lock;
+                padding: 15px 50px;
+                border-radius: 50px;
+                margin: 0 130px;
+                outline: none;
+            }
+        }      
+    }
+    aside{
+        max-width: $demi-width;
+
+        img{
+            position: absolute;
+            right: 7%;
+            width: 38%;
+        }
+    }
+
+    .souris{
+        position: absolute;
+        width: $mouse-size;
+        height: $mouse-size;
+        border-radius: 50%;
+        outline: none;
+        border: none;
+        background-color: $white;
+        box-shadow: -0px 6px 10px rgba(97, 86, 249, 0.2);
+        bottom: 0px;
+        right: 52%;
+    }
+
+    .souris:hover{
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width: 1230px) {
+    .container-1{
+        section{
+            min-width: $max-width;
+            display: flex;
+            justify-content: center;
+
+            article{
+
+                h1{
+                    margin-top: 100px;
+                    margin-left: 0;
+                    text-align: center;
+                }
+
+                p{
+                    margin-left: 0;
+                    text-align: center;
+                }
+
+                button{
+                    margin: 0 28%;
+                }
+            }
+        }
+
+        aside{
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1230px){
+    .container-1{
+        section{
+            article{
+                .social-container{
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.container-4{
+    display: flex;
+    max-width: $width;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    min-height: 820px;
+    background-color: #7f76f934 ;
+    
+    .titre-4{
+        font-family: $lobster;
+        font-size: 20px;    
+        font-weight: $medium;
+        color: $purple;
+        opacity: 1;
+        margin-top: 90px;
+    }
+
+    h2{
+        font-family: $poppins;
+        font-size: 48px;
+        font-weight: $medium;
+        color: $grey;
+        margin: 0 auto;
+        margin-top: 5px;
+        margin-bottom: 60px;
+    }
+    
+    section{
+        display: flex;
+
+        article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+            height: 490px;
+            background-color: $white;
+            border-radius: 25px;
+            margin: 0px 40px;
+            transition: 0.5s;
+
+            h2{
+                font-family: $lobster;
+                font-size: 28px;
+                font-weight: $semi-light;
+                margin: 0 auto;
+                margin-top: 65px;
+                margin-bottom: 30px;
+            }
+
+            p{
+                font-family: $poppins;
+                font-size: 17px;
+                font-weight: $light;
+                color: $grey;
+                margin: 40px 45px;
+                text-align: center;
+            }
+
+            h3{
+                font-family: $poppins;
+                font-size: 30px;
+                font-weight: $medium;
+                color: $dark-blue;
+                margin-top: 0;
+            }
+
+            button{
+                border-color: $dark-blue;
+                text-decoration: none;
+                background-color: $white;
+                color: $grey;
+                font-family: $poppins;
+                font-size: 15px;
+                font-weight: $semi-light;
+                padding: 15px 50px;
+                margin: 45px auto;
+                border-radius: 50px;
+                
+            }
+
+            button:hover{
+                background: $gradiant;
+                border: none;
+                color: $white;
+            }
+
+        }
+
+        article:hover{
+            box-shadow: -0px 6px 10px rgba(97, 86, 249, 0.25);
+        }
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .container-4{
+
+        h2{
+            margin-bottom: 0px;
+        }
+
+        .titre-4{
+            margin-top: 30px;
+        }
+
+        section{
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            article{
+                width: 70%;
+                margin: 15px auto;
+            }
+        }
+    }
+}

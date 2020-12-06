@@ -1,0 +1,143 @@
+footer{
+    max-width: $width;
+    min-height: 610px;
+    position: relative;
+    display: flex;
+    margin: auto;
+    color: $white;
+
+    img{
+        width: $max-width;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .title-container{
+        margin-top: 20%;
+        margin-left: 12%;
+
+        h2{ 
+            text-align: center;
+            font-family: $dosis;
+            font-size: 50px;
+            font-weight: $semi-thin;
+        }
+    
+        h3{
+            font-family: $poppins;
+            font-size: 31px;
+            font-weight: $medium;
+        }
+    }
+
+    ul{
+        margin-top: 285px;
+        margin-left: 140px;
+
+        li{
+            list-style: none;
+            margin: 15px 0px;
+
+            .list-title{
+                font-family: $poppins;
+                font-size: 20px;
+                font-weight: $medium;
+            }
+
+            a{
+                color: $white;
+                text-decoration: none;
+                font-family: $poppins;
+                font-size: 16px;
+                font-weight: $medium;
+            }
+
+            p{
+                font-family: $poppins;
+                font-size: 16px; 
+                
+            }
+        }
+
+    }
+    table{
+        margin-top: 288px;
+        margin-left: 140px;
+        
+        th{
+            font-family: $poppins;
+            font-size: 20px;
+            font-weight: $medium;
+            text-align: left;
+            padding: 7px 0px;
+        }
+
+        td{
+            font-family: $poppins;
+            font-size: 15px;
+            font-weight: $medium;
+            text-align: left;
+            padding: 8px 0px;
+        }
+
+        .table-title{
+            text-align: left;
+        }   
+
+        .table-hours{
+            width: 100px;
+            text-align: right;
+        }
+    }
+}
+
+@media screen and (max-width: 1290px) {
+    footer{
+        background: $gradiant;
+        min-height: 200px;
+        
+        img{
+            display: none;
+        }
+
+        .title-container{
+            display: none;
+        }
+
+        ul{
+            margin: $reset;
+            width: 30%;
+        }
+
+        table{
+            margin: $reset;
+            width: 30%;
+        }
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    footer{
+        justify-content: space-evenly;
+
+        .title-container{
+            display: none;
+        }
+        ul{
+            width: 26%;
+        }
+        table{
+            width: 26%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 730px) {
+    footer{
+        table{
+            display: none;
+        }
+    }
+}

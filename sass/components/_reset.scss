@@ -1,0 +1,19 @@
+@import "../helpers/variables.scss";
+
+*{
+    margin: $reset;
+    padding: $reset;
+    box-sizing: border-box;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
